@@ -26,9 +26,11 @@ a:hover{
 .botonera{
     background-color: rgba(134, 126, 115, 0.1);
 }
+    .botonera a:hover{
+    color: rgb(173, 173, 172);
+}
     .botonera img{
-    width: 150px;
-    /* margin-left: 20px; */
+    width: 200px;
     }
     .botonera a{
         text-decoration: none;
@@ -280,6 +282,12 @@ color: #9e8213;
     margin-left: 20vw;
     margin-right: 20vw;
     width: 50vw;
+}
+.send-button{ 
+    background-color: #ebcf5d;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
 @media (width <768px){
