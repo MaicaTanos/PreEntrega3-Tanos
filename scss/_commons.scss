@@ -1,5 +1,150 @@
-//selectores comunes a todo el proyecto
+//selectores comunes: bg,body,header. paginas index, sobre mi, contacto
 *{
     font-family: $main-font;
     box-sizing: border-box;
+}
+#bg{
+    background-image: url("../PHOTOS/fondo\ b&w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+body{
+    background-color: circle, rgb(206, 188, 54), rgb(244, 230, 78);
+    // background-image: url("../img/fondo-bokeh-tr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+        img{
+            width: 500px;
+            margin: 40px 40px;
+            margin-right: 80px;
+            background-color: $bg-dark-color;
+        }
+}
+.princ{
+        a{color: $no-hover-color;}
+        a:hover{color: $hover-color;}
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas: 
+        "pos pos"
+        "pren gal";
+        gap: 30px;
+        margin-bottom: 20vh;
+}
+.pos{
+    grid-area: pos;
+    background-color: $bg-gold-color;
+    width: 50vw;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: $text-w-bold;
+    line-height: 1.4em;
+    padding: 30px;
+    border-radius: 10px;
+        h1{
+            font-size: $font-sz-xl;
+            color: $dark-color;
+            margin-bottom: 20px;
+        }
+}
+.ver-mas-gal{
+    grid-area: gal;
+    width: 30%;
+    background-color: $bg-gold-color;
+    border-radius: 10px;
+    padding: 30px;
+    h2{
+        font-size: $font-sz-l;
+        margin-bottom: 1vh;
+        font-weight: $text-w-bold;
+        text-align: center;
+    }
+    p{
+        font-size: $font-sz-m;
+        font-weight: $text-w-regular;
+        line-height: 1.3em;
+        text-align: center;
+    }
+}
+.ver-mas-pren{
+    grid-area: pren;
+    width: 30%;
+    background-color: $bg-gold-color;
+    border-radius: 10px;
+    padding: 30px;
+    h2{
+        font-size: $font-sz-l;
+        margin-bottom: 1vh;
+        font-weight: $text-w-bold;
+        text-align: center;
+    }
+    p{
+        font-size: $font-sz-m;
+        font-weight: $text-w-regular;
+        line-height: 1.3em;
+        text-align: center;
+    }
+}
+.title{ 
+    font-size: $font-sz-xxl;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        content: url("/img/Icons/icono-titulo-i.png");
+        margin-right: 1vw;
+    }
+    &::after{
+        content: url("../img/Icons/icono-titulo-d.png");
+        margin-left: 1vw;
+    }
+}    
+.about-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p{
+       font-size: $font-sz-m;
+       font-weight: $text-w-regular;
+       text-align: center;
+       margin-left: 3vw;
+       margin-right: 3vw;
+    }
+    img{
+        width: 25vw;
+        padding: 2vw;
+        margin-bottom: 4vh;
+    }
+}
+.contact{
+    @extend .title;
+}
+.form{
+    width: 40vw;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    margin-bottom: 12vh;    
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send-btn{ 
+    background-color: rgb(235, 207, 93);
 }

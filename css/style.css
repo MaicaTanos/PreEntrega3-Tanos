@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
 
 *{
     margin: 0;
@@ -12,8 +12,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-}
-#bg{
+} */
+/* #bg{
     background-image: url("../PHOTOS/fondo\ b&w.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,38 +22,38 @@ body{
 }
 a:hover{
     color: rgb(173, 173, 172);
-}
-.botonera{
+} */
+/* .botonera{
     background-color: rgba(134, 126, 115, 0.1);
-}
-    .botonera a:hover{
+} */
+    /* .botonera a:hover{
     color: rgb(173, 173, 172);
-}
-    .botonera img{
+} */
+    /* .botonera img{
     width: 200px;
-    }
-    .botonera a{
+    } */
+    /* .botonera a{
         text-decoration: none;
         font-size: 1.5em;
         color: #9e8213;
         font-weight: bold;
-    }
-    .botonera li{
+    } */
+    /* .botonera li{
         margin-left: 5vw;
         padding-right: 3vw;
-    }
-header{
+    } */
+/* header{
     width: 100vw;
     display: flex;
     justify-content: flex-end;
-}            
-    header img{
+}             */
+    /* header img{
         width: 500px;
         margin: 40px 40px;
         margin-right: 80px;
         background-color: rgba(4, 4, 3, 0.384);
-    }
-main{
+    } */
+/* .princ{
     padding: 30px;
     display: flex;
     flex-direction: column;    
@@ -104,8 +104,8 @@ main{
 .ver-mas h2{
     font-size: 1.5em;
     margin-bottom: 10px;
-}
-footer{
+} */
+/* footer{
     background-color: rgba(134, 126, 115, 0.355);
     width: 100vw;
     position: fixed;
@@ -122,8 +122,8 @@ footer{
     }
     footer a{
         text-decoration: none;
-    }
-.about-me{
+    } */
+/* .about-me{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -167,9 +167,9 @@ color: #9e8213;
 }
 .about-me img{
     width: 350px;    
-}
+} */
 
-.photo{
+/* .photo{
     height: 100vh;
     width: auto;
 }
@@ -191,8 +191,8 @@ color: #9e8213;
     content: url("../img/Icons/icono-titulo-d.png");
     width: 50px;
     margin-left: 10px;
-}
-.press{
+} */
+/* .press{
     display: grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: 5% repeat(4,22.5%);
@@ -275,8 +275,8 @@ color: #9e8213;
     content: url("../img/Icons/icono-titulo-d.png");
     width: 50px;
     margin-left: 10px;
-}
-.form{
+} */
+/* .form{
     margin-top: 2vh;
     margin-bottom: 10vh;
     margin-left: 20vw;
@@ -288,7 +288,7 @@ color: #9e8213;
     display: flex;
     justify-content: center;
     justify-items: center;
-}
+} */
 
 @media (width <768px){
     header{
