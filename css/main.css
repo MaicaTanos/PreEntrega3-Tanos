@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap");
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -13,23 +13,20 @@
 }
 
 body {
-  background-color: circle, rgb(206, 188, 54), rgb(244, 230, 78);
+  background-image: url("../img/fondo-bokeh-tr.png");
+  background-color: rgb(223, 218, 203);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
 }
 
 header {
-  width: 100vw;
+  width: auto;
   display: flex;
   justify-content: flex-end;
 }
 header img {
-  width: 500px;
-  margin: 40px 40px;
-  margin-right: 80px;
-  background-color: rgba(134, 126, 115, 0.1019607843);
+  margin: 5vh 5vw;
+  background-color: rgba(73, 67, 60, 0.2274509804);
 }
 
 .princ {
@@ -43,9 +40,10 @@ header img {
 }
 .princ a {
   color: #423d3d;
+  font-size: 0.9em;
 }
 .princ a:hover {
-  color: #adadac;
+  color: #f8eaea;
 }
 
 .pos {
@@ -54,13 +52,14 @@ header img {
   width: 50vw;
   text-align: center;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 550;
   line-height: 1.4em;
   padding: 30px;
   border-radius: 10px;
 }
 .pos h1 {
   font-size: 2em;
+  font-weight: 600;
   color: #242215;
   margin-bottom: 20px;
 }
@@ -75,12 +74,12 @@ header img {
 .ver-mas-gal h2 {
   font-size: 1.5em;
   margin-bottom: 1vh;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 .ver-mas-gal p {
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 1.3em;
   text-align: center;
 }
@@ -95,25 +94,27 @@ header img {
 .ver-mas-pren h2 {
   font-size: 1.5em;
   margin-bottom: 1vh;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 .ver-mas-pren p {
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 1.3em;
   text-align: center;
 }
 
 .title, .prensa, .galeria, .contact {
-  font-size: 3em;
   text-align: center;
-  color: #9e8213;
-  margin-bottom: 2vh;
+  color: #907713;
   margin-top: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.title h1, .prensa h1, .galeria h1, .contact h1 {
+  font-size: 3.5em;
+  font-weight: 600;
 }
 .title::before, .prensa::before, .galeria::before, .contact::before {
   content: url("/img/Icons/icono-titulo-i.png");
@@ -142,45 +143,78 @@ header img {
   margin-bottom: 4vh;
 }
 
-.form {
-  width: 40vw;
+.formulario {
   margin-top: 3vh;
-  margin-left: 2vw;
   margin-bottom: 12vh;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  grid-template-areas: "form exter";
 }
-
-.button {
+.formulario .button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.formulario .button .send-btn {
+  background-color: rgba(228, 202, 97, 0.833);
+  font-weight: 600;
+}
+.formulario .form {
+  width: 40vw;
+  padding: 2vw;
+}
 
-.send-btn {
-  background-color: rgb(235, 207, 93);
+.external {
+  padding: 8vw;
+  grid-area: exter;
+  display: flex;
+  flex-direction: column;
+}
+.external img {
+  width: 6vw;
+  padding: 2vh;
+}
+.external a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #242215;
+  font-weight: 600;
 }
 
 .botonera {
-  background-color: rgba(134, 126, 115, 0.1);
+  height: 30vh;
+  background-color: rgba(73, 67, 60, 0.2274509804);
 }
 .botonera img {
-  width: 200px;
+  width: 11vw;
+  margin-top: 2vh;
 }
 .botonera li {
-  margin-left: 5vw;
   padding-right: 3vw;
 }
 .botonera a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
   text-decoration: none;
-  font-size: 1.5em;
-  color: #9e8213;
+  font-size: 1.8em;
+  color: #907713;
   font-weight: 600;
 }
 .botonera a:hover {
-  color: #adadac;
+  color: #f8eaea;
+  background-size: 100% 2px;
 }
 
 footer {
-  background-color: rgba(134, 126, 115, 0.1019607843);
+  background-color: rgba(73, 67, 60, 0.2274509804);
   width: 100vw;
   position: fixed;
   bottom: 0;
@@ -193,7 +227,6 @@ footer img {
   width: 60px;
   padding: 10px 10px;
   margin-left: 20px;
-  color: white;
 }
 footer a {
   text-decoration: none;
@@ -273,6 +306,59 @@ footer a {
   font-weight: 600;
   text-align: center;
   margin-top: 4vh;
+}
+
+@media (max-width: 768px) {
+  #bg {
+    background-image: url("../PHOTOS/juana-bg-2.jpg");
+  }
+  .botonera img {
+    width: 20vw;
+  }
+  .botonera svg {
+    fill: #f3f1e9;
+  }
+  .botonera a {
+    color: #f3f1e9;
+  }
+  header {
+    display: none;
+  }
+  .ver-mas-gal, .ver-mas-pren {
+    display: none;
+  }
+  .pos {
+    width: 100vw;
+    margin-top: 20vh;
+  }
+  .about-me {
+    flex-direction: column;
+    margin: 5vw;
+    font-size: 1.2em;
+  }
+  .about-me img {
+    width: 50vw;
+  }
+  .press {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .press figcaption {
+    font-size: 1.5em;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario .form {
+    width: 70vw;
+  }
+  .external img {
+    width: 10vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

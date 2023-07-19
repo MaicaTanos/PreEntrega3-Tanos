@@ -11,27 +11,27 @@
     background-position: center center;
 }
 body{
-    background-color: circle, rgb(206, 188, 54), rgb(244, 230, 78);
-    // background-image: url("../img/fondo-bokeh-tr.png");
+    
+    background-image: url("../img/fondo-bokeh-tr.png");
+    background-color: rgb(223, 218, 203);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
 }
 header{
-    width: 100vw;
+    width: auto;
     display: flex;
     justify-content: flex-end;
         img{
-            width: 500px;
-            margin: 40px 40px;
-            margin-right: 80px;
+            margin: 5vh 5vw;
             background-color: $bg-dark-color;
         }
 }
 .princ{
-        a{color: $no-hover-color;}
-        a:hover{color: $hover-color;}
+        a{
+            color: $no-hover-color;
+            font-size: $font-sz-xs;
+            &:hover{color: $hover-color;}
+        }
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2,auto);
@@ -54,6 +54,7 @@ header{
     border-radius: 10px;
         h1{
             font-size: $font-sz-xl;
+            font-weight: $text-w-bolder;
             color: $dark-color;
             margin-bottom: 20px;
         }
@@ -67,12 +68,12 @@ header{
     h2{
         font-size: $font-sz-l;
         margin-bottom: 1vh;
-        font-weight: $text-w-bold;
+        font-weight: $text-w-bolder;
         text-align: center;
     }
     p{
         font-size: $font-sz-m;
-        font-weight: $text-w-regular;
+        font-weight: $text-w-bold;
         line-height: 1.3em;
         text-align: center;
     }
@@ -86,25 +87,27 @@ header{
     h2{
         font-size: $font-sz-l;
         margin-bottom: 1vh;
-        font-weight: $text-w-bold;
+        font-weight: $text-w-bolder;
         text-align: center;
     }
     p{
         font-size: $font-sz-m;
-        font-weight: $text-w-regular;
+        font-weight: $text-w-bold;
         line-height: 1.3em;
         text-align: center;
     }
 }
-.title{ 
-    font-size: $font-sz-xxl;
+.title{
     text-align: center;
     color: $main-color;
-    margin-bottom: 2vh;
     margin-top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    h1{
+        font-size: $font-sz-xxl;
+        font-weight: $text-w-bolder;
+    }
     &::before{
         content: url("/img/Icons/icono-titulo-i.png");
         margin-right: 1vw;
@@ -134,17 +137,45 @@ header{
 .contact{
     @extend .title;
 }
-.form{
-    width: 40vw;
+.formulario{
     margin-top: 3vh;
-    margin-left: 2vw;
-    margin-bottom: 12vh;    
-}
-.button{
-    display: flex;
-    justify-content: center;
+    margin-bottom: 12vh;
+    font-size: $font-sz-m;
+    font-weight: $text-w-bolder;
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .send-btn{ 
+                background-color: rgba(228, 202, 97, 0.833);
+                font-weight: $text-w-bolder;
+            }
+        }
+    .form{
+        width: 40vw;
+        padding: 2vw;
+    }    
+    display: grid;
     align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    grid-template-areas: "form exter";
 }
-.send-btn{ 
-    background-color: rgb(235, 207, 93);
-}
+.external{
+    padding: 8vw;
+    grid-area: exter;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 6vw;
+        padding: 2vh;
+    }
+    a{
+        text-decoration: none;
+        font-size: $font-sz-m;
+        color: $dark-color;
+        font-weight: $text-w-bolder;
+    }
+    
+}            

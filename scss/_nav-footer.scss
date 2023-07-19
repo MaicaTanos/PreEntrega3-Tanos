@@ -1,20 +1,27 @@
 // nav y footer
-.botonera{
-    background-color: rgba(134, 126, 115, 0.1);
+.botonera{ 
+    height: 30vh;
+    background-color: $bg-dark-color;
         img{
-            width: 200px;
+            width: 11vw;
+            margin-top: 2vh;    
         }
         li{
-            margin-left: 5vw;
             padding-right: 3vw;
         }
             a{
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size 0.3s;
                 text-decoration: none;
-                font-size: $font-sz-l;
+                font-size: $font-sz-inter;
                 color: $main-color;
                 font-weight: $text-w-bolder;
                 &:hover{
                     color: $hover-color;
+                    background-size: 100% 2px;
                 }
             }
 }
@@ -30,8 +37,7 @@ footer{
         img{
             width: 60px;
             padding: 10px 10px;
-            margin-left: 20px;
-            color: white;  
+            margin-left: 20px; 
         }
         a{
             text-decoration: none;
