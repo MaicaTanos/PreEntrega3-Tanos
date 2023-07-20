@@ -31,7 +31,7 @@ header{
             color: $no-hover-color;
             font-size: $font-sz-xs;
             &:hover{color: $hover-color;}
-        }
+        }    
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2,auto);
@@ -40,8 +40,8 @@ header{
         "pos pos"
         "pren gal";
         gap: 30px;
-        margin-bottom: 20vh;
-}
+        margin-bottom: 20vh;       
+} 
 .pos{
     grid-area: pos;
     background-color: $bg-gold-color;
@@ -177,5 +177,4 @@ header{
         color: $dark-color;
         font-weight: $text-w-bolder;
     }
-    
 }            
