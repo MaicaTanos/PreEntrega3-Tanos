@@ -192,8 +192,12 @@ header img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
+}
+.error h1 {
+  font-size: 1.5em;
+  margin-bottom: 5vh;
 }
 .error img {
   width: 30vw;
@@ -217,7 +221,7 @@ header img {
   background-color: rgba(73, 67, 60, 0.2274509804);
 }
 .botonera img {
-  width: 11vw;
+  width: 30vw;
   margin-top: 2vh;
 }
 .botonera li {
@@ -338,14 +342,21 @@ footer a {
   #bg {
     background-image: url("../photos/juana-bg-2.jpg");
   }
+  .botonera {
+    height: 20vh;
+  }
   .botonera img {
-    width: 20vw;
+    width: 18vw;
   }
   .botonera svg {
     fill: #f3f1e9;
   }
   .botonera a {
     color: #f3f1e9;
+  }
+  .botonera .show {
+    background-color: rgba(73, 67, 60, 0.2274509804);
+    background-size: 20vw;
   }
   header {
     display: none;

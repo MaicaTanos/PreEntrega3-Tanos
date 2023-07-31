@@ -4,11 +4,12 @@
         background-image: url("../photos/juana-bg-2.jpg");
     }
     .botonera{
-        img{
-            width: 20vw;
-        }
+        height: 20vh;
+        img{width: 18vw;}
         svg{fill: $white-color;}
         a{color: $white-color;}
+        .show{background-color: $bg-dark-color;
+        background-size: 20vw;}
     }
     header{ 
         display: none;
