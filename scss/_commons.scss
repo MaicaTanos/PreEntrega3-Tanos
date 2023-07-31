@@ -11,11 +11,7 @@
     background-position: center center;
 }
 body{
-    
-    background-image: url("../img/fondo-bokeh-tr.png");
-    background-color: rgb(223, 218, 203);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: radial-gradient(circle, rgba(235, 199, 208, 0.775) 60%, rgba(228, 165, 181, 0.868) 100%);
 }
 header{
     width: auto;
@@ -109,11 +105,11 @@ header{
         font-weight: $text-w-bolder;
     }
     &::before{
-        content: url("/img/Icons/icono-titulo-i.png");
+        content: url("../img/icons/icono-titulo-i.png");
         margin-right: 1vw;
     }
     &::after{
-        content: url("../img/Icons/icono-titulo-d.png");
+        content: url("../img/icons/icono-titulo-d.png");
         margin-left: 1vw;
     }
 }    
@@ -147,8 +143,11 @@ header{
             justify-content: center;
             align-items: center;
             .send-btn{ 
-                background-color: rgba(228, 202, 97, 0.833);
-                font-weight: $text-w-bolder;
+                background-color: rgba(228, 202, 97, 0.833);     
+                a{text-decoration: none;
+                  font-weight: $text-w-bolder;
+                  color: $dark-color; 
+                }
             }
         }
     .form{
@@ -177,4 +176,26 @@ header{
         color: $dark-color;
         font-weight: $text-w-bolder;
     }
-}            
+}   
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    img{width: 30vw;
+        margin-bottom: 5vh;
+    }
+    figcaption{
+        a{text-decoration: none;
+          background-color: $bg-gold-color;
+          padding-left: 1vw;
+          padding-right: 1vw;
+          color: $dark-color;
+          font-size: $font-sz-xl;
+          font-weight: $text-w-bolder;
+          &:hover{color: $hover-color;}
+         }
+    }
+}         

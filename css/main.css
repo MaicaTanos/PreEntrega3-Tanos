@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap");
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   box-sizing: border-box;
 }
 
@@ -13,10 +13,7 @@
 }
 
 body {
-  background-image: url("../img/fondo-bokeh-tr.png");
-  background-color: rgb(223, 218, 203);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: radial-gradient(circle, rgba(235, 199, 208, 0.775) 60%, rgba(228, 165, 181, 0.868) 100%);
 }
 
 header {
@@ -59,7 +56,7 @@ header img {
 }
 .pos h1 {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 800;
   color: #242215;
   margin-bottom: 20px;
 }
@@ -74,7 +71,7 @@ header img {
 .ver-mas-gal h2 {
   font-size: 1.5em;
   margin-bottom: 1vh;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
 }
 .ver-mas-gal p {
@@ -94,7 +91,7 @@ header img {
 .ver-mas-pren h2 {
   font-size: 1.5em;
   margin-bottom: 1vh;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
 }
 .ver-mas-pren p {
@@ -106,7 +103,7 @@ header img {
 
 .title, .prensa, .galeria, .contact {
   text-align: center;
-  color: #907713;
+  color: #c2a11f;
   margin-top: 2vh;
   display: flex;
   justify-content: center;
@@ -114,14 +111,14 @@ header img {
 }
 .title h1, .prensa h1, .galeria h1, .contact h1 {
   font-size: 3.5em;
-  font-weight: 600;
+  font-weight: 800;
 }
 .title::before, .prensa::before, .galeria::before, .contact::before {
-  content: url("/img/Icons/icono-titulo-i.png");
+  content: url("../img/icons/icono-titulo-i.png");
   margin-right: 1vw;
 }
 .title::after, .prensa::after, .galeria::after, .contact::after {
-  content: url("../img/Icons/icono-titulo-d.png");
+  content: url("../img/icons/icono-titulo-d.png");
   margin-left: 1vw;
 }
 
@@ -147,7 +144,7 @@ header img {
   margin-top: 3vh;
   margin-bottom: 12vh;
   font-size: 1.1em;
-  font-weight: 600;
+  font-weight: 800;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -162,7 +159,11 @@ header img {
 }
 .formulario .button .send-btn {
   background-color: rgba(228, 202, 97, 0.833);
-  font-weight: 600;
+}
+.formulario .button .send-btn a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #242215;
 }
 .formulario .form {
   width: 40vw;
@@ -183,7 +184,32 @@ header img {
   text-decoration: none;
   font-size: 1.1em;
   color: #242215;
-  font-weight: 600;
+  font-weight: 800;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.error img {
+  width: 30vw;
+  margin-bottom: 5vh;
+}
+.error figcaption a {
+  text-decoration: none;
+  background-color: rgba(230, 208, 122, 0.5058823529);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: #242215;
+  font-size: 2em;
+  font-weight: 800;
+}
+.error figcaption a:hover {
+  color: #f8eaea;
 }
 
 .botonera {
@@ -204,9 +230,9 @@ header img {
   background-size: 0% 2px;
   transition: background-size 0.3s;
   text-decoration: none;
-  font-size: 1.8em;
-  color: #907713;
-  font-weight: 600;
+  font-size: 2.1em;
+  color: #c2a11f;
+  font-weight: 800;
 }
 .botonera a:hover {
   color: #f8eaea;
@@ -303,7 +329,7 @@ footer a {
   margin-right: 2vw;
 }
 .press figcaption {
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   margin-top: 4vh;
 }
@@ -358,6 +384,12 @@ footer a {
   }
   .external img {
     width: 15vw;
+  }
+  .error {
+    margin-top: 1vh;
+  }
+  .error img {
+    width: 100vw;
   }
 }
 
